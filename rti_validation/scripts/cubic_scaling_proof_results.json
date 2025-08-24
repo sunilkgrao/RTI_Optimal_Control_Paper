@@ -1,7 +1,0 @@
-{
-  "validation_results": {
-    "total_tests": 15,
-    "valid_scalings": 15,
-    "correlation": 1.0,
-    "mean_relative_error": 8.0650620883322e-18,
-    "validation_passed": 
