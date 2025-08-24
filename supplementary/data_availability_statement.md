@@ -2,7 +2,7 @@
 
 ## For inclusion in manuscript:
 
-"The data that support the findings of this study are openly available. Athena++ simulation data was obtained from the public repository at https://github.com/connor-mcclellan/rayleigh-taylor. Processed data, analysis scripts, and figure generation codes are available at https://github.com/[username]/rti-optimal-control-validation (DOI: 10.5281/zenodo.XXXXXXX). The repository includes comprehensive documentation and a Docker container for full reproducibility."
+"The data that support the findings of this study are openly available. Athena++ simulation data was obtained from the public repository at https://github.com/connor-mcclellan/rayleigh-taylor. Processed data, analysis scripts, and figure generation codes are available at https://github.com/sunilkgrao/RTI_Optimal_Control_Paper (DOI: 10.5281/zenodo.XXXXXXX - to be assigned). The repository includes comprehensive documentation and a Docker container for full reproducibility."
 
 ## Detailed Data Sources
 

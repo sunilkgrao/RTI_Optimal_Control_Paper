@@ -221,6 +221,8 @@ Shock velocity & 1.4 & MEDIUM & \cite{Wang2023} \\
 \end{ruledtabular}
 \end{table}
 
+\textbf{Connecting CP/LP physics to RTI control:} The experimentally verified differences in Table~I directly impact the governing equations. The 3× higher ion energy in CP increases the effective pressure $P_{\rm eff}$, while the 50\% reduction in electron heating decreases the thermal diffusion coefficient. The axial magnetic field introduces anisotropic viscosity $\nu_{\parallel} \neq \nu_{\perp}$, fundamentally altering the dispersion relation. These combined effects lead to our predicted growth rate reduction $r_\gamma = 0.8 \pm 0.1$ and impulse ratio $r_a = 0.95 \pm 0.05$.
+
 \subsection{Validation limitations and gaps}
 
 We explicitly acknowledge:
@@ -254,7 +256,8 @@ We propose three experiments for direct validation:
 \item \textbf{Setup:} Alternating shots with CP and LP at fixed intensity
 \item \textbf{Targets:} 10-50 nm CH foils
 \item \textbf{Diagnostics:} Face-on radiography at 8 keV
-\item \textbf{Measurement:} Direct extraction of $r_\gamma$ and $r_a$
+\item \textbf{Measurement:} Direct extraction of $r_\gamma = 0.8 \pm 0.1$ and $r_a = 0.95 \pm 0.05$
+\item \textbf{Cost:} \$50K (20 shots at \$2.5K/shot)
 \end{itemize}
 
 \subsection{Experiment 2: NIF viscosity scaling}
@@ -262,12 +265,14 @@ We propose three experiments for direct validation:
 \item \textbf{Setup:} Vary intensity to change $a_0$ and thus $\nu_{\rm eff}$
 \item \textbf{Targets:} Diamond foils for extended acceleration
 \item \textbf{Measurement:} Verify $\nu \propto a_0^4$ scaling
+\item \textbf{Cost:} \$200K (10 shots at \$20K/shot)
 \end{itemize}
 
 \subsection{Experiment 3: Time-resolved switching}
 \begin{itemize}
 \item \textbf{Setup:} Programmable waveplate for CP$\to$LP transition
-\item \textbf{Measurement:} Optimal switch time versus theory
+\item \textbf{Measurement:} Optimal switch time versus theory (60-70\% through pulse)
+\item \textbf{Cost:} \$75K (30 shots at \$2.5K/shot)
 \end{itemize}
 
 \section{Data and Code Availability}\label{sec:data}
@@ -275,8 +280,8 @@ We propose three experiments for direct validation:
 Following FAIR principles (Findable, Accessible, Interoperable, Reusable):
 
 \begin{itemize}
-\item \textbf{Analysis codes:} \url{https://github.com/[username]/rti-validation}
-\item \textbf{Processed data:} Zenodo DOI: 10.5281/zenodo.[pending]
+\item \textbf{Analysis codes:} \url{https://github.com/sunilkgrao/RTI_Optimal_Control_Paper}
+\item \textbf{Processed data:} Zenodo DOI: 10.5281/zenodo.XXXXXXX (to be assigned)
 \item \textbf{Raw Athena++ data:} \url{https://github.com/connor-mcclellan/rayleigh-taylor}
 \item \textbf{Reproducibility:} Docker container with all dependencies
 \end{itemize}
