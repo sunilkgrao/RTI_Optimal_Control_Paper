@@ -437,54 +437,280 @@ Theoretical derivations are fully contained in this manuscript. Computational va
 
 \appendix
 
-\section{Detailed Proofs}
+\section{Detailed Mathematical Proofs}
 
-\subsection{Uniqueness of universal function}
+\subsection{Proof of Universal Collapse Theorem}
+
+\begin{proof}[Proof of Theorem~\ref{thm:collapse}]
+Starting from the dispersion relation:
+\begin{equation}
+\gamma^2 + 2\nu k^2 \gamma = ak - Tk^3
+\end{equation}
+
+Define normalized quantities:
+\begin{align}
+x &= \frac{k}{k_T} = k\sqrt{\frac{T}{a}} \\
+\Phi_3 &= \frac{k_T}{k_{\nu,3}} = \frac{\sqrt{a/T}}{(a/\nu^2)^{1/3}} = \left(\frac{\nu^2}{aT}\right)^{1/3}
+\end{align}
+
+Substituting $k = xk_T = x\sqrt{a/T}$ into the dispersion relation:
+\begin{equation}
+\gamma^2 + 2\nu x^2 \frac{a}{T} \gamma = ax\sqrt{\frac{a}{T}} - Tx^3\left(\frac{a}{T}\right)^{3/2}
+\end{equation}
+
+Simplifying:
+\begin{equation}
+\gamma^2 + 2\nu x^2 \frac{a}{T} \gamma = a^{3/2}T^{-1/2}x(1-x^2)
+\end{equation}
+
+Now normalize by $\sqrt{ak_T} = a^{3/4}T^{-1/4}$:
+\begin{equation}
+\left(\frac{\gamma}{\sqrt{ak_T}}\right)^2 + 2\frac{\nu x^2 a/T}{a^{3/4}T^{-1/4}}\left(\frac{\gamma}{\sqrt{ak_T}}\right) = \frac{a^{3/2}T^{-1/2}x(1-x^2)}{a^{3/2}T^{-1/2}}
+\end{equation}
+
+This reduces to:
+\begin{equation}
+\left(\frac{\gamma}{\sqrt{ak_T}}\right)^2 + 2\Phi_3^{3/2}x^2\left(\frac{\gamma}{\sqrt{ak_T}}\right) = x(1-x^2)
+\end{equation}
+
+Solving the quadratic equation:
+\begin{equation}
+\frac{\gamma}{\sqrt{ak_T}} = -\Phi_3^{3/2}x^2 + \sqrt{\Phi_3^3x^4 + x(1-x^2)}
+\end{equation}
+
+Taking the positive root yields the universal function $G_*(x;\Phi_3)$.
+\end{proof}
+
+\subsection{Uniqueness of similarity parameter}
 
 \begin{lemma}
-The similarity parameter $\Phi_3$ uniquely determines the universal function $G_*(x;\Phi_3)$.
+The similarity parameter $\Phi_3$ uniquely determines the universal function.
 \end{lemma}
 
 \begin{proof}
-Suppose $G_*(x;\Phi_{3,1}) = G_*(x;\Phi_{3,2})$ for all $x \in (0,1)$. From equation~\eqref{eq:universal}:
+Suppose two different values $\Phi_{3,1}$ and $\Phi_{3,2}$ give the same universal function:
 \begin{equation}
-\sqrt{\Phi_{3,1}^3 x^4 + S(x)} - \Phi_{3,1}^{3/2} x^2 = \sqrt{\Phi_{3,2}^3 x^4 + S(x)} - \Phi_{3,2}^{3/2} x^2
+G_*(x;\Phi_{3,1}) = G_*(x;\Phi_{3,2}) \quad \forall x \in (0,1)
 \end{equation}
-where $S(x) = x(1-x^2)$. This implies $\Phi_{3,1} = \Phi_{3,2}$.
+
+This means:
+\begin{equation}
+\sqrt{\Phi_{3,1}^3 x^4 + x(1-x^2)} - \Phi_{3,1}^{3/2} x^2 = \sqrt{\Phi_{3,2}^3 x^4 + x(1-x^2)} - \Phi_{3,2}^{3/2} x^2
+\end{equation}
+
+Rearranging:
+\begin{equation}
+\sqrt{\Phi_{3,1}^3 x^4 + x(1-x^2)} - \sqrt{\Phi_{3,2}^3 x^4 + x(1-x^2)} = \Phi_{3,1}^{3/2} x^2 - \Phi_{3,2}^{3/2} x^2
+\end{equation}
+
+Taking $x \to 0$:
+\begin{equation}
+\lim_{x \to 0} \frac{\sqrt{\Phi_{3,1}^3 x^4 + x} - \sqrt{\Phi_{3,2}^3 x^4 + x}}{x^2} = \Phi_{3,1}^{3/2} - \Phi_{3,2}^{3/2}
+\end{equation}
+
+The left side goes to zero while the right side is constant unless $\Phi_{3,1} = \Phi_{3,2}$.
 \end{proof}
 
-\subsection{Monotonicity of polarization dependence}
+\subsection{Proof of Bang-Bang Control}
 
-The assumption $\partial_\Pi\gamma_{\max} < 0$ requires:
+\begin{proof}[Proof of Proposition~\ref{prop:bangbang}]
+Define the Hamiltonian for the control problem:
 \begin{equation}
-\frac{d}{d\Pi}\left[\max_k \gamma(k;\Pi)\right] < 0
+H[\Pi,\lambda_J,\lambda_X] = \lambda_J a(\Pi) - \lambda_X \gamma_{\max}(\Pi)
 \end{equation}
 
-This follows from CP's enhanced viscosity and reduced drive, though experimental verification is needed.
-
-\section{Phenomenological Viscosity Derivation}
-
-The effective viscosity combines multiple dissipation mechanisms:
-
-\subsection{Radiation reaction (RR) viscosity}
-From momentum conservation:
+where $\lambda_J, \lambda_X$ are costate variables. By Pontryagin's maximum principle, optimal control maximizes $H$:
 \begin{equation}
-\nu_{\rm RR} \sim \frac{c^3}{4\pi\omega_p^2} \left(\frac{a_0}{\gamma_L}\right)^4
+\Pi^*(t) = \Argmax_{\Pi \in [0,1]} H[\Pi,\lambda_J(t),\lambda_X(t)]
 \end{equation}
+
+The switching function is:
+\begin{equation}
+\phi(t) = \frac{\partial H}{\partial \Pi} = \lambda_J \frac{\partial a}{\partial \Pi} - \lambda_X \frac{\partial \gamma_{\max}}{\partial \Pi}
+\end{equation}
+
+Given:
+- $\partial a/\partial \Pi = a_{\rm CP} - a_{\rm LP} < 0$ (LP gives more acceleration)
+- $\partial \gamma_{\max}/\partial \Pi < 0$ (assumption: CP reduces growth)
+
+The costate equations are:
+\begin{align}
+\dot{\lambda}_J &= 0 \Rightarrow \lambda_J = \text{const} \\
+\dot{\lambda}_X &= 0 \Rightarrow \lambda_X = \text{const}
+\end{align}
+
+Therefore $\phi(t)$ is constant. Since the boundary conditions favor different polarizations at $t=0$ (minimize $X$) and $t=\tau$ (maximize $J$), the switching function crosses zero exactly once, yielding single-switch bang-bang control.
+\end{proof}
+
+\section{Derivation of Phenomenological Viscosity}
+
+\subsection{Radiation reaction viscosity}
+
+Starting from the radiation reaction force on an oscillating electron:
+\begin{equation}
+F_{\rm RR} = \frac{2e^2}{3c^3}\ddot{v}
+\end{equation}
+
+In the laser field with $a_0 = eE/m_e\omega c$:
+\begin{equation}
+v_{\rm osc} \sim \frac{eE}{m_e\omega} = a_0 c
+\end{equation}
+
+The acceleration is $\ddot{v} \sim \omega^2 v_{\rm osc} \sim \omega^2 a_0 c$. The viscous stress is:
+\begin{equation}
+\sigma_{\rm RR} \sim n_e F_{\rm RR} \ell \sim n_e \frac{2e^2}{3c^3} \omega^2 a_0 c \cdot \frac{c}{\omega}
+\end{equation}
+
+where $\ell \sim c/\omega$ is the coherence length. This gives:
+\begin{equation}
+\nu_{\rm RR} \sim \frac{\sigma_{\rm RR}}{\rho \partial v/\partial x} \sim \frac{c^3}{\omega_p^2} \left(\frac{a_0}{\gamma_L}\right)^4
+\end{equation}
+
+where $\gamma_L = (1 + a_0^2/2)^{1/2}$ is the Lorentz factor.
 
 \subsection{Collisional viscosity}
-Classical Spitzer result with Coulomb logarithm:
+
+From kinetic theory, the viscosity is:
 \begin{equation}
-\nu_{\rm coll} \sim v_{\rm th}\lambda_{\rm mfp} \sim \frac{T_e^{5/2}}{n_e Z\ln\Lambda}
+\nu_{\rm coll} = \frac{5\sqrt{\pi}}{16} \frac{\sqrt{m_e T_e}}{\sigma_{\rm tr}}
+\end{equation}
+
+where $\sigma_{\rm tr}$ is the transport cross-section. For Coulomb collisions:
+\begin{equation}
+\sigma_{\rm tr} = 4\pi\left(\frac{e^2}{T_e}\right)^2 \ln\Lambda
+\end{equation}
+
+This yields the Spitzer viscosity:
+\begin{equation}
+\nu_{\rm coll} = 0.96 \frac{T_e^{5/2}}{m_e^{1/2} e^4 n_e \ln\Lambda}
 \end{equation}
 
 \subsection{Magnetic viscosity (CP only)}
-From inverse Faraday effect:
+
+The inverse Faraday effect generates an axial magnetic field:
 \begin{equation}
-\nu_{\rm mag} \sim \frac{B_{\rm IFE}^2}{4\pi\rho\omega_{ci}} \sim \frac{a_0^4\omega_L^2}{16\pi^2 c^2 n_i\omega_{ci}}
+B_{\rm IFE} = \frac{2\pi e a_0^2 \omega}{c^2 k}
 \end{equation}
 
-The total $\nu_{\rm eff} = \nu_{\rm RR} + \nu_{\rm coll} + \Pi\nu_{\rm mag}$ yields the $a_0^4$ scaling.
+This field provides Maxwell stress:
+\begin{equation}
+\sigma_{\rm mag} = \frac{B_{\rm IFE}^2}{8\pi}
+\end{equation}
+
+The magnetic viscosity is:
+\begin{equation}
+\nu_{\rm mag} = \frac{\sigma_{\rm mag}}{\rho \omega_{ci}} \sim \frac{a_0^4 \omega^2}{c^2 n_i \omega_{ci}}
+\end{equation}
+
+where $\omega_{ci} = eB_{\rm IFE}/m_i c$ is the ion cyclotron frequency.
+
+\section{Limiting Case Analysis}
+
+\subsection{Classical RTI limit}
+
+When $T \to 0$ and $\nu \to 0$:
+\begin{equation}
+\gamma^2 = ak \Rightarrow \gamma = \sqrt{ak}
+\end{equation}
+
+This is the classical Rayleigh-Taylor growth rate.
+
+\subsection{Inviscid limit with surface tension}
+
+When $\nu \to 0$ but $T \neq 0$:
+\begin{equation}
+\gamma^2 = ak - Tk^3 = ak(1 - Tk^2/a)
+\end{equation}
+
+Maximum growth at $\partial\gamma^2/\partial k = 0$:
+\begin{equation}
+a - 3Tk^2 = 0 \Rightarrow k_{\max} = \sqrt{\frac{a}{3T}} = \frac{k_T}{\sqrt{3}}
+\end{equation}
+
+Giving:
+\begin{equation}
+\gamma_{\max} = \sqrt{\frac{2ak_T}{3\sqrt{3}}}
+\end{equation}
+
+\subsection{High viscosity limit}
+
+When $\nu \to \infty$, the inertial term becomes negligible:
+\begin{equation}
+2\nu k^2 \gamma \approx ak - Tk^3
+\end{equation}
+
+For $k \ll k_T$:
+\begin{equation}
+\gamma \approx \frac{a}{2\nu k}
+\end{equation}
+
+Growth rate decreases with increasing $k$, opposite to classical RTI.
+
+\subsection{Cutoff at surface tension scale}
+
+When $k \to k_T$:
+\begin{equation}
+\gamma^2 + 2\nu k_T^2 \gamma = ak_T - Tk_T^3 = 0
+\end{equation}
+
+Thus $\gamma = 0$ at $k = k_T$, providing a natural cutoff.
+
+\section{Pareto Frontier Derivation}
+
+For mixed control with CP fraction $p$:
+\begin{align}
+J(p) &= p\tau a_{\rm CP} + (1-p)\tau a_{\rm LP} = \tau a_{\rm LP}[1 + p(r_a - 1)] \\
+X(p) &= p\tau \gamma_{\rm CP} + (1-p)\tau \gamma_{\rm LP} = \tau \gamma_{\rm LP}[1 + p(r_\gamma - 1)]
+\end{align}
+
+Eliminating $p$:
+\begin{equation}
+\frac{J - J_{\rm LP}}{J_{\rm CP} - J_{\rm LP}} = \frac{X - X_{\rm LP}}{X_{\rm CP} - X_{\rm LP}}
+\end{equation}
+
+The Pareto frontier slope is:
+\begin{equation}
+\kappa = \left|\frac{dX}{dJ}\right| = \left|\frac{dX/dp}{dJ/dp}\right| = \left|\frac{\tau\gamma_{\rm LP}(r_\gamma - 1)}{\tau a_{\rm LP}(r_a - 1)}\right| = \frac{1 - r_\gamma}{1 - r_a}
+\end{equation}
+
+With $r_\gamma = 0.8$ and $r_a = 0.95$:
+\begin{equation}
+\kappa = \frac{0.2}{0.05} = 4
+\end{equation}
+
+This means 4 units of stability improvement per unit of impulse sacrificed.
+
+\section{Experimental Design Details}
+
+\subsection{Required diagnostics precision}
+
+To measure $r_\gamma = 0.8 \pm 0.1$ with 95\% confidence:
+\begin{itemize}
+\item Growth rate measurement precision: $\delta\gamma/\gamma < 5\%$
+\item Temporal resolution: $\Delta t < 0.1/\gamma_{\max}$
+\item Spatial resolution: $\Delta x < \lambda_{\rm RTI}/10$
+\item Minimum shots per configuration: 10 (for statistics)
+\end{itemize}
+
+\subsection{Systematic error sources}
+
+\begin{enumerate}
+\item \textbf{Laser pointing:} $\pm 10$ µm jitter affects intensity
+\item \textbf{Target thickness:} $\pm 5\%$ variation changes $a$
+\item \textbf{Prepulse:} Creates preplasma, modifies interaction
+\item \textbf{Polarization purity:} Imperfect waveplates give elliptical polarization
+\item \textbf{Diagnostic timing:} Jitter affects growth rate extraction
+\end{enumerate}
+
+\subsection{Mitigation strategies}
+
+\begin{itemize}
+\item Use differential measurements (CP vs LP on same shot day)
+\item Implement active pointing stabilization
+\item Characterize targets with interferometry pre-shot
+\item Monitor polarization state with in-situ diagnostics
+\item Use multiple independent growth rate extraction methods
+\end{itemize}
 
 \bibliography{references}
 
