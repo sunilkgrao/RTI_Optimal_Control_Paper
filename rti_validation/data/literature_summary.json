@@ -1,0 +1,25 @@
+{
+  "total_papers": 5,
+  "open_access_papers": 1,
+  "subscription_papers": 4,
+  "year_range": [
+    2004,
+    2017
+  ],
+  "data_types": [
+    "initialization_effects",
+    "reynolds_effects",
+    "growth_rates",
+    "mixing_efficiency",
+    "mixing_width",
+    "spectral_analysis",
+    "bubble_spike_velocities"
+  ],
+  "experimental_methods": [
+    "water_channel",
+    "numerical_2d",
+    "gas_channel",
+    "numerical",
+    "numerical_3d"
+  ]
+}

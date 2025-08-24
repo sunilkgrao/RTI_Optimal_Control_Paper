@@ -1,0 +1,44 @@
+{
+  "efficacy_analysis": {
+    "pareto_slope_kappa": -0.4872749099639855,
+    "kappa_uncertainty": 0.3447251163505625,
+    "amplitude_ratio_r_a": 1.2764227642276422,
+    "r_a_uncertainty": 0.12202499791964375,
+    "growth_rate_ratio_r_gamma": 0.8653061224489796,
+    "r_gamma_uncertainty": 0.07446274876238855,
+    "overall_confidence": 0.9167449091258647
+  },
+  "raw_measurements": {
+    "LP_results": {
+      "field_amplitude": 12.3,
+      "amplitude_error": 0.8,
+      "growth_rate": 2450000000.0,
+      "growth_rate_error": 120000000.0
+    },
+    "CP_results": {
+      "field_amplitude": 15.7,
+      "amplitude_error": 1.1,
+      "growth_rate": 2120000000.0,
+      "growth_rate_error": 150000000.0
+    }
+  },
+  "simulation_parameters": {
+    "k_seed": 2100000.0,
+    "lambda0_um": 0.8,
+    "a0": 15.0,
+    "thickness_nm": 50.0,
+    "target_material": "DLC"
+  },
+  "methodology": {
+    "amplitude_extraction": "max(sqrt(Ey\u00b2 + Ez\u00b2)) from Fields*.h5",
+    "growth_rate_extraction": "Section III.F protocol with RANSAC fitting",
+    "pareto_slope_formula": "\u03ba = (1-r_\u03b3)/(1-r_a)",
+    "uncertainty_propagation": "Jacobian method for error propagation"
+  },
+  "validation_metadata": {
+    "analysis_date": "2025-08-24T12:00:00Z",
+    "analyzer": "LP_CP_Efficacy_Comparator",
+    "purpose": "RTI_Optimal_Control_Validation",
+    "paper_section": "Table_II_Calibration"
+  }
+}

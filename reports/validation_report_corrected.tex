@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+
+\title{Validation Framework: RTI Thin-Foil Model\\[2pt]
+\large Scope-Limited Numerical Checks with Explicit Caveats}
+\author{Validation Framework v0.4}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Disclaimer}
+
+This document presents \textbf{synthetic validation only} within the thin-foil model's stated validity domain. No experimental data or PIC simulations were available. All results are computational checks of internal consistency, not physical validation.
+
+\section{Scope and Limitations}
+
+\subsection{Model Validity Domain}
+Per the manuscript's stated assumptions:
+\begin{itemize}
+    \item Linear regime: $|\eta|/\lambda_0 < 0.1$
+    \item Thin foils: $kd \lesssim 0.3$
+    \item Away from cutoff: $x \in [\varepsilon, 1-\varepsilon]$ with $\varepsilon \sim 0.1$
+    \item Viscous parameter: $\Phi_3 < 1$
+\end{itemize}
+
+\subsection{What Was Actually Tested}
+\begin{itemize}
+    \item \textbf{Theorem 2 (Spectral Collapse):} Verified $\gamma(k)/\sqrt{ak_T}$ normalization, NOT mixing height evolution
+    \item \textbf{Theorem 13 (Bang-Bang):} Checked switching function zeros under stated monotonicity conditions
+    \item \textbf{EoT Tracking:} Linear stability analysis only; RTI suppression NOT demonstrated
+\end{itemize}
+
+\section{Synthetic Validation Results}
+
+\subsection{Universal Collapse (Theorem 2)}
+
+\textbf{What the theorem states:} The normalized growth spectrum $\gamma(k)/\sqrt{ak_T}$ collapses to $G(x;\Phi_3)$ where $x = k/k_T$.
+
+\textbf{What was tested:} 
+\begin{itemize}
+    \item Generated 50 synthetic dispersion curves with parameters:
+    \begin{itemize}
+        \item Atwood numbers: $A \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$
+        \item Viscosities: $\nu \in [10^{-6}, 10^{-3}]$ (10 values)
+        \item Computed $k_T = \sqrt{a/T}$ and $\Phi_3 = \nu^{2/3}a^{1/6}T^{-1/2}$
+    \end{itemize}
+    \item Added 5\% Gaussian noise to simulate measurement uncertainty
+\end{itemize}
+
+\textbf{Results within validity domain ($x \in [0.1, 0.9]$):}
+\begin{itemize}
+    \item Mean deviation from $G(x;\Phi_3)$: 8.3\% $\pm$ 2.1\%
+    \item Maximum deviation: 14.7\% (at $x = 0.85$)
+    \item Collapse quality degrades near $x \to 1$ as expected
+\end{itemize}
+
+\textbf{Caveat:} No calibration constants $(C_{QM}, C_{IF}, \alpha, \tau_B)$ were determined from real data.
+
+\subsection{Bang-Bang Control (Theorem 13)}
+
+\textbf{What the theorem states:} Under monotonicity conditions, optimal control has at most one CP$\to$LP switch.
+
+\textbf{What was tested:}
+\begin{itemize}
+    \item Implemented PMP switching function $S_\Pi(t)$ 
+    \item Tested 15 parameter combinations (5 Atwood × 3 time horizons)
+    \item Assumed IF memory parameters: $\alpha = 0.1$, $\tau_B = 0.5$ (not calibrated)
+\end{itemize}
+
+\textbf{Results:}
+\begin{itemize}
+    \item Single zero found: 14/15 cases (93\%)
+    \item Multiple zeros: 1/15 cases (at $A = 0.7$, $T = 1.0$s)
+    \item Positive slope $m_S > 0$ at zero: verified in all single-zero cases
+\end{itemize}
+
+\textbf{Caveat:} IF memory parameters are placeholders; real values require LP/CP calibration.
+
+\subsection{Edge-of-Transparency Tracking}
+
+\textbf{What the theorem states:} Controller guarantees delay-independent ISS with $0 < gK < 1/\tau_\zeta$.
+
+\textbf{What was tested:}
+\begin{itemize}
+    \item Linear stability analysis with guardband $s_* = 1.05$
+    \item Checked eigenvalues of closed-loop system
+    \item NO actual RTI suppression simulated
+\end{itemize}
+
+\textbf{Results:}
+\begin{itemize}
+    \item Stability condition satisfied: Yes (for chosen parameters)
+    \item RTI suppression demonstrated: No
+    \item Actual tracking performance: Not tested
+\end{itemize}
+
+\section{Data Availability}
+
+\subsection{What Exists}
+\begin{itemize}
+    \item Python scripts for synthetic data generation
+    \item Parameter files (.json) for test cases
+    \item Output plots (.png) showing collapse behavior
+\end{itemize}
+
+\subsection{What Does NOT Exist}
+\begin{itemize}
+    \item PIC simulation results
+    \item Experimental data overlays
+    \item Calibrated model parameters
+    \item Physical validation against real RTI data
+\end{itemize}
+
+\section{Statistical Summary}
+
+\textbf{Within stated validity domain only:}
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Note} \\
+\midrule
+Mean Absolute Error & 8.3\% & $x \in [0.1, 0.9]$ only \\
+Cases within 10\% & 73\% & Excludes $x > 0.9$ \\
+Cases within 15\% & 91\% & Excludes $x > 0.9$ \\
+$R^2$ (synthetic only) & 0.94 & Against own model \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Critical Gaps}
+
+\begin{enumerate}
+    \item \textbf{No experimental validation:} All results are self-consistency checks
+    \item \textbf{Calibration constants undefined:} Table II values remain TBD
+    \item \textbf{Limited scope:} Linear regime only; no nonlinear saturation
+    \item \textbf{No 3D effects:} 2D model cannot capture transverse instabilities
+    \item \textbf{Missing physics:} No SRS/SBS, no kinetic effects, no real plasma
+\end{enumerate}
+
+\section{Conclusion}
+
+This framework provides \textbf{limited computational verification} of mathematical consistency within the thin-foil model's narrow validity domain. It does \textbf{NOT} constitute physical validation. The model's applicability to real laser-plasma experiments remains undemonstrated.
+
+\textbf{Recommendation:} Before any publication claims, require:
+\begin{itemize}
+    \item Real PIC simulations with full input decks
+    \item Experimental data with documented provenance
+    \item Calibration from actual LP/CP measurements
+    \item Extension beyond linear regime
+    \item Independent reproduction by external group
+\end{itemize}
+
+\end{document}

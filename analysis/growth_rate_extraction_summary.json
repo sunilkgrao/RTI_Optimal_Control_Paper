@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-08-24T10:50:21.874747",
+  "n_simulations": 50,
+  "atwood_range": [
+    0.1,
+    0.9
+  ],
+  "mean_relative_error": 0.6041997331146771,
+  "std_relative_error": 0.6645589894958583,
+  "within_5_percent": 10.0,
+  "within_10_percent": 20.0,
+  "best_method_frequency": {
+    "linear": 50
+  },
+  "validation_passed": false
+}

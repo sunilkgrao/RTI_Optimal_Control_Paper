@@ -1,0 +1,41 @@
+{
+  "description": "Synthetic experimental data generated based on Zhou 2017 typical values",
+  "datasets": {
+    "growth_rate_data.csv": {
+      "description": "Growth rate vs Atwood number following \u03b3 = \u221a(A*g*k)",
+      "rows": 36,
+      "scatter": "5-10% experimental scatter added",
+      "uncertainty": "3-5% experimental uncertainty"
+    },
+    "mixing_width_data.csv": {
+      "description": "Mixing width evolution h = 2*\u03b3*t\u00b2",
+      "rows": 100,
+      "scatter": "5-15% experimental scatter added",
+      "uncertainty": "4-8% experimental uncertainty"
+    },
+    "bubble_spike_data.csv": {
+      "description": "Bubble and spike velocities from Zhou 2017 relations",
+      "rows": 9,
+      "scatter": "\u00b18% experimental scatter added",
+      "uncertainty": "5% experimental uncertainty"
+    }
+  },
+  "parameters": {
+    "gravity": 9.81,
+    "wave_numbers": [
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "atwood_range": [
+      0.1,
+      0.9
+    ],
+    "time_range": [
+      0.1,
+      2.0
+    ]
+  },
+  "reference": "Zhou, Y. (2017). Rayleigh-Taylor and Richtmyer-Meshkov instability induced flow, turbulence, and mixing. Physics Reports, 720, 1-136."
+}

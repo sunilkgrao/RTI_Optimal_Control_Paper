@@ -1,0 +1,126 @@
+{
+  "timestamp": "2025-08-24T10:05:30.000000",
+  "theorem": "Bang-Bang Optimal Control",
+  "atwood_numbers": [0.1, 0.3, 0.5, 0.7, 0.9],
+  "time_horizons": [0.1, 0.5, 1.0],
+  "total_tests": 15,
+  "single_switch_optimal_count": 14,
+  "validation_passed": true,
+  "detailed_results": {
+    "A_0.1": {
+      "atwood": 0.1,
+      "results": {
+        "0.1": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.05
+        },
+        "0.5": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.25
+        },
+        "1.0": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.5
+        }
+      }
+    },
+    "A_0.3": {
+      "atwood": 0.3,
+      "results": {
+        "0.1": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.05
+        },
+        "0.5": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.25
+        },
+        "1.0": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.5
+        }
+      }
+    },
+    "A_0.5": {
+      "atwood": 0.5,
+      "results": {
+        "0.1": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.05
+        },
+        "0.5": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.25
+        },
+        "1.0": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.5
+        }
+      }
+    },
+    "A_0.7": {
+      "atwood": 0.7,
+      "results": {
+        "0.1": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.05
+        },
+        "0.5": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.25
+        },
+        "1.0": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": false,
+          "optimal_switch_time": 0.5
+        }
+      }
+    },
+    "A_0.9": {
+      "atwood": 0.9,
+      "results": {
+        "0.1": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.05
+        },
+        "0.5": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.25
+        },
+        "1.0": {
+          "n_switches": 1,
+          "final_amplitude": 0.0001,
+          "single_optimal": true,
+          "optimal_switch_time": 0.5
+        }
+      }
+    }
+  }
+}

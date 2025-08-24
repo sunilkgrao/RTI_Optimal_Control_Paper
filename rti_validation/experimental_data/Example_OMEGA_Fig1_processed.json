@@ -1,0 +1,68 @@
+{
+  "x": [
+    0.5,
+    0.8,
+    1.2,
+    1.8,
+    2.5,
+    3.2
+  ],
+  "y": [
+    0.12,
+    0.18,
+    0.24,
+    0.29,
+    0.31,
+    0.28
+  ],
+  "x_err": [
+    0.02,
+    0.02,
+    0.03,
+    0.03,
+    0.04,
+    0.05
+  ],
+  "y_err": [
+    0.01,
+    0.015,
+    0.02,
+    0.025,
+    0.03,
+    0.035
+  ],
+  "metadata": {
+    "digitization_date": "2025-08-24T13:16:24.317144",
+    "digitized_by": "RTI_Validation_Pipeline",
+    "digitizer": "WebPlotDigitizer",
+    "figure_panel": "Fig1",
+    "paper_id": "Example_OMEGA",
+    "validation_purpose": "Universal_Collapse_Anchoring"
+  },
+  "experimental_parameters": {
+    "atwood_number": null,
+    "density_gcm3": null,
+    "diagnostic_type": "TBD",
+    "facility": "OMEGA_Example",
+    "laser_intensity_Wcm2": null,
+    "laser_wavelength_nm": null,
+    "pulse_duration_ps": null,
+    "seeded_wavelength_um": null,
+    "target_material": "TBD",
+    "target_thickness_um": null
+  },
+  "validation_report": {
+    "n_points": 6,
+    "x_range": [
+      0.5,
+      3.2
+    ],
+    "y_range": [
+      0.12,
+      0.31
+    ],
+    "monotonic_x": true,
+    "finite_values": true,
+    "kd_check": null
+  }
+}

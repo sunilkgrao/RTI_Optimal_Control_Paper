@@ -1,0 +1,39 @@
+{
+  "simulation_type": "RTI_viscous",
+  "atwood_number": 0.5,
+  "viscosity": 0.00046415888336127773,
+  "resolution": 256,
+  "domain": {
+    "x_min": 0,
+    "x_max": 0.01,
+    "y_min": 0,
+    "y_max": 0.04,
+    "nx": 256,
+    "ny": 1024
+  },
+  "fluids": {
+    "heavy": {
+      "density": 3000.0,
+      "viscosity": 0.00046415888336127773
+    },
+    "light": {
+      "density": 1000,
+      "viscosity": 0.00046415888336127773
+    }
+  },
+  "initial_conditions": {
+    "interface_position": 0.02,
+    "perturbation_amplitude": 1e-05,
+    "perturbation_wavelength": 0.001,
+    "perturbation_mode": 1
+  },
+  "time": {
+    "dt": 1e-06,
+    "t_max": 0.1,
+    "output_interval": 0.001
+  },
+  "physics": {
+    "gravity": -9.81,
+    "surface_tension": 0.0
+  }
+}

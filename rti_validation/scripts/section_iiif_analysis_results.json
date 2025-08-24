@@ -1,0 +1,20 @@
+{
+  "simulation_parameters": {
+    "lambda0_um": 0.8,
+    "a0": 15.0,
+    "thickness_nm": 50.0,
+    "k_seed": 2100000.0,
+    "ne_over_nc": 100.0,
+    "Te_eV": 10.0,
+    "Ti_eV": 1.0,
+    "target_material": "DLC",
+    "facility": "Synthetic_PIC_Validation"
+  },
+  "lp_analysis": null,
+  "cp_analysis": null,
+  "analysis_metadata": {
+    "extractor": "SectionIIIFExtractor",
+    "methodology": "RANSAC_fitting_with_linear_window_detection",
+    "analysis_date": "2025-08-24T12:08:00Z"
+  }
+}

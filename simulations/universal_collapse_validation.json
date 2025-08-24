@@ -1,0 +1,278 @@
+{
+  "timestamp": "2025-08-24T10:41:29.639630",
+  "theorem": "Universal Collapse (Cubic Viscous Scaling)",
+  "n_simulations": 50,
+  "atwood_numbers": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "viscosities": [
+    1e-06,
+    2.1544346900318822e-06,
+    4.641588833612782e-06,
+    1e-05,
+    2.1544346900318823e-05,
+    4.641588833612772e-05,
+    0.0001,
+    0.00021544346900318823,
+    0.00046415888336127773,
+    0.001
+  ],
+  "results": {
+    "A0.1_nu1.00e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.020652091563312498,
+      "xi_mean": 0.7918558244400336
+    },
+    "A0.1_nu2.15e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.02047268464012439,
+      "xi_mean": 0.7898119257337389
+    },
+    "A0.1_nu4.64e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.016541492980544418,
+      "xi_mean": 0.7890337355526096
+    },
+    "A0.1_nu1.00e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.019767051504422952,
+      "xi_mean": 0.7895311129149084
+    },
+    "A0.1_nu2.15e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.02098460745646525,
+      "xi_mean": 0.7912532992093076
+    },
+    "A0.1_nu4.64e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.018846415880565674,
+      "xi_mean": 0.7916896243742305
+    },
+    "A0.1_nu1.00e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.020449303975295704,
+      "xi_mean": 0.7931405263533682
+    },
+    "A0.1_nu2.15e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.01894007645341122,
+      "xi_mean": 0.7901282449298594
+    },
+    "A0.1_nu4.64e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.019092900354909546,
+      "xi_mean": 0.7910405180401793
+    },
+    "A0.1_nu1.00e-03": {
+      "collapsed": true,
+      "variance_ratio": 0.020116455573480976,
+      "xi_mean": 0.7909525566177574
+    },
+    "A0.3_nu1.00e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.017316562336466862,
+      "xi_mean": 1.3636487557099668
+    },
+    "A0.3_nu2.15e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.02021407074310012,
+      "xi_mean": 1.3676713239784217
+    },
+    "A0.3_nu4.64e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.020360019818866478,
+      "xi_mean": 1.3651645827960093
+    },
+    "A0.3_nu1.00e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.02042659298159498,
+      "xi_mean": 1.3677608898310156
+    },
+    "A0.3_nu2.15e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.018690261709704132,
+      "xi_mean": 1.3678110767750908
+    },
+    "A0.3_nu4.64e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.019791607987483254,
+      "xi_mean": 1.3679909648442183
+    },
+    "A0.3_nu1.00e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.019656990351105026,
+      "xi_mean": 1.3732145640562796
+    },
+    "A0.3_nu2.15e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.017743952206185118,
+      "xi_mean": 1.3757468408932716
+    },
+    "A0.3_nu4.64e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.018582721521625527,
+      "xi_mean": 1.3725654754150414
+    },
+    "A0.3_nu1.00e-03": {
+      "collapsed": true,
+      "variance_ratio": 0.020829208254989955,
+      "xi_mean": 1.3727482396947093
+    },
+    "A0.5_nu1.00e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.02200823138698332,
+      "xi_mean": 1.7734872873318004
+    },
+    "A0.5_nu2.15e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.020240446988397318,
+      "xi_mean": 1.7643965350658726
+    },
+    "A0.5_nu4.64e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.019217578584680404,
+      "xi_mean": 1.7715124710543875
+    },
+    "A0.5_nu1.00e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.02152351102719608,
+      "xi_mean": 1.7684054592602598
+    },
+    "A0.5_nu2.15e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.021309379365377946,
+      "xi_mean": 1.7649001449323725
+    },
+    "A0.5_nu4.64e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.0190524540667113,
+      "xi_mean": 1.7745858082031705
+    },
+    "A0.5_nu1.00e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.019695302156084383,
+      "xi_mean": 1.7623434607742843
+    },
+    "A0.5_nu2.15e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.02190645622204225,
+      "xi_mean": 1.7681562139424563
+    },
+    "A0.5_nu4.64e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.01752907836089165,
+      "xi_mean": 1.7658798522588737
+    },
+    "A0.5_nu1.00e-03": {
+      "collapsed": true,
+      "variance_ratio": 0.021031510747580105,
+      "xi_mean": 1.7621444232587327
+    },
+    "A0.7_nu1.00e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.02366293562211986,
+      "xi_mean": 2.0855876875628203
+    },
+    "A0.7_nu2.15e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.021550572865046518,
+      "xi_mean": 2.0975444879949765
+    },
+    "A0.7_nu4.64e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.02039925232869864,
+      "xi_mean": 2.091693420798241
+    },
+    "A0.7_nu1.00e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.022585417773509704,
+      "xi_mean": 2.091192917222728
+    },
+    "A0.7_nu2.15e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.02016759053052225,
+      "xi_mean": 2.0917359185455147
+    },
+    "A0.7_nu4.64e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.022039271194214914,
+      "xi_mean": 2.0916886044464835
+    },
+    "A0.7_nu1.00e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.02003816017566419,
+      "xi_mean": 2.0833255376785127
+    },
+    "A0.7_nu2.15e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.022242823250365876,
+      "xi_mean": 2.0887574220089844
+    },
+    "A0.7_nu4.64e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.021080658929881674,
+      "xi_mean": 2.09792546274815
+    },
+    "A0.7_nu1.00e-03": {
+      "collapsed": true,
+      "variance_ratio": 0.019751670162988046,
+      "xi_mean": 2.0938763410862515
+    },
+    "A0.9_nu1.00e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.019758480700176953,
+      "xi_mean": 2.3776979631501876
+    },
+    "A0.9_nu2.15e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.017740492839307568,
+      "xi_mean": 2.3714420215359753
+    },
+    "A0.9_nu4.64e-06": {
+      "collapsed": true,
+      "variance_ratio": 0.019911448023100773,
+      "xi_mean": 2.3732265464284574
+    },
+    "A0.9_nu1.00e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.02055270384621031,
+      "xi_mean": 2.373245447867296
+    },
+    "A0.9_nu2.15e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.021521030626235012,
+      "xi_mean": 2.3760680277907764
+    },
+    "A0.9_nu4.64e-05": {
+      "collapsed": true,
+      "variance_ratio": 0.017924758277072947,
+      "xi_mean": 2.3775549146856503
+    },
+    "A0.9_nu1.00e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.021052798962498103,
+      "xi_mean": 2.3748218519172952
+    },
+    "A0.9_nu2.15e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.02138123906618965,
+      "xi_mean": 2.3742338308399766
+    },
+    "A0.9_nu4.64e-04": {
+      "collapsed": true,
+      "variance_ratio": 0.017804113272905535,
+      "xi_mean": 2.3720678053593875
+    },
+    "A0.9_nu1.00e-03": {
+      "collapsed": true,
+      "variance_ratio": 0.02056723375605544,
+      "xi_mean": 2.366143370644956
+    }
+  },
+  "validation_passed": true,
+  "plot_file": "../simulations/universal_collapse_validation.png"
+}

@@ -1,0 +1,67 @@
+citation:
+  doi: TBD
+  first_author: TBD
+  journal: TBD
+  title: TBD
+  year: null
+data_points:
+- - 0.5
+  - 0.12
+  - 0.02
+  - 0.01
+- - 0.8
+  - 0.18
+  - 0.02
+  - 0.015
+- - 1.2
+  - 0.24
+  - 0.03
+  - 0.02
+- - 1.8
+  - 0.29
+  - 0.03
+  - 0.025
+- - 2.5
+  - 0.31
+  - 0.04
+  - 0.03
+- - 3.2
+  - 0.28
+  - 0.05
+  - 0.035
+digitization_calibration:
+  calibration_points: []
+  x_axis_units: TBD
+  x_max_pixel: null
+  x_max_value: null
+  x_min_pixel: null
+  x_min_value: null
+  y_axis_units: TBD
+  y_max_pixel: null
+  y_max_value: null
+  y_min_pixel: null
+  y_min_value: null
+experimental_parameters:
+  atwood_number: null
+  density_gcm3: null
+  diagnostic_type: TBD
+  facility: OMEGA_Example
+  laser_intensity_Wcm2: null
+  laser_wavelength_nm: null
+  pulse_duration_ps: null
+  seeded_wavelength_um: null
+  target_material: TBD
+  target_thickness_um: null
+metadata:
+  digitization_date: '2025-08-24T13:16:24.317144'
+  digitized_by: RTI_Validation_Pipeline
+  digitizer: WebPlotDigitizer
+  figure_panel: Fig1
+  paper_id: Example_OMEGA
+  validation_purpose: Universal_Collapse_Anchoring
+quality_flags:
+  clear_error_bars: false
+  kd_ratio_valid: null
+  linear_growth_window: true
+  mode_coupling_visible: false
+  saturation_effects: false

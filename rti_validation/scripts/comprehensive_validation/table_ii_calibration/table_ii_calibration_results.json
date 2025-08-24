@@ -1,0 +1,53 @@
+{
+  "table_ii_parameters": {
+    "C_QM": 0.14974309113447454,
+    "C_IF": 0.1,
+    "alpha": 0.5672173521998221,
+    "tau_B": 0.9363861321664007,
+    "chi2_reduced": 14.933377557712852,
+    "r_squared": 0.5884001939272923,
+    "confidence": 0.22462167065698743,
+    "C_QM_err": 0.00907597935343093,
+    "C_IF_err": 4.586610270677726,
+    "alpha_err": 0.06744893276600282,
+    "tau_B_err": 0.7071067519334107
+  },
+  "calibration_input_data": {
+    "pareto_slope_kappa": -0.0018586284476092081,
+    "kappa_uncertainty": 0.3391798063888813,
+    "effective_viscosity_lp": 1.2e-06,
+    "effective_viscosity_cp": 1.4e-06,
+    "experimental_anchor_points": 12,
+    "atwood_number": 0.5
+  },
+  "lp_cp_efficacy_results": {
+    "r_a": 1.4166284829695408,
+    "r_gamma": 0.9992256424494685,
+    "kappa": -0.0018586284476092081,
+    "a_max_lp": 66.01015001066192,
+    "a_max_cp": 93.5118586701958,
+    "gamma_lp": 1019416741.6744331,
+    "gamma_cp": 1018627348.6233793,
+    "confidence": 0.9045674083962568,
+    "r_a_err": 0.10017076067297741,
+    "r_gamma_err": 0.14131184554230078,
+    "kappa_err": 0.3391798063888813
+  },
+  "closure_relations": {
+    "equation_20": "C_QM * (\u03bd_eff/\u03bd_classical)^\u03b1 = f(\u03ba, A)",
+    "equation_21": "C_IF * ln(\u03bd_cp/\u03bd_lp) = ln(r_\u03b3) + \u03b1*ln(C_QM)",
+    "equation_22": "\u03c4_B = C_QM^(1/3) * I^(-2/3) * f(\u03b1)"
+  },
+  "methodology": {
+    "optimization_method": "Differential Evolution",
+    "parameter_bounds": "C_QM: [0.1,5.0], C_IF: [0.1,5.0], \u03b1: [0.01,2.0], \u03c4_B: [0.1,50.0]",
+    "uncertainty_estimation": "Finite difference Hessian approximation",
+    "experimental_weighting": "Chi-squared with measurement uncertainties"
+  },
+  "validation_metadata": {
+    "analysis_date": "2025-08-24T12:00:00Z",
+    "calibrator": "Table_II_Calibrator",
+    "purpose": "RTI_Optimal_Control_Parameter_Fitting",
+    "paper_table": "Table_II"
+  }
+}

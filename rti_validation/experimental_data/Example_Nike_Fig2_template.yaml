@@ -1,0 +1,67 @@
+citation:
+  doi: TBD
+  first_author: TBD
+  journal: TBD
+  title: TBD
+  year: null
+data_points:
+- - 1.0
+  - 0.1
+  - 0.1
+  - 0.01
+- - 2.0
+  - 0.15
+  - 0.1
+  - 0.015
+- - 3.0
+  - 0.22
+  - 0.1
+  - 0.02
+- - 4.0
+  - 0.33
+  - 0.1
+  - 0.03
+- - 5.0
+  - 0.48
+  - 0.1
+  - 0.04
+- - 6.0
+  - 0.72
+  - 0.1
+  - 0.06
+digitization_calibration:
+  calibration_points: []
+  x_axis_units: TBD
+  x_max_pixel: null
+  x_max_value: null
+  x_min_pixel: null
+  x_min_value: null
+  y_axis_units: TBD
+  y_max_pixel: null
+  y_max_value: null
+  y_min_pixel: null
+  y_min_value: null
+experimental_parameters:
+  atwood_number: null
+  density_gcm3: null
+  diagnostic_type: TBD
+  facility: Nike_Example
+  laser_intensity_Wcm2: null
+  laser_wavelength_nm: null
+  pulse_duration_ps: null
+  seeded_wavelength_um: null
+  target_material: TBD
+  target_thickness_um: null
+metadata:
+  digitization_date: '2025-08-24T13:16:24.319109'
+  digitized_by: RTI_Validation_Pipeline
+  digitizer: WebPlotDigitizer
+  figure_panel: Fig2
+  paper_id: Example_Nike
+  validation_purpose: Universal_Collapse_Anchoring
+quality_flags:
+  clear_error_bars: false
+  kd_ratio_valid: null
+  linear_growth_window: true
+  mode_coupling_visible: false
+  saturation_effects: false

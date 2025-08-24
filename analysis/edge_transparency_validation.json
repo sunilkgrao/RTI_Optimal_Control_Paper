@@ -1,0 +1,98 @@
+{
+  "timestamp": "2025-08-24T10:10:38.864668",
+  "theorem": "Edge-of-Transparency Tracking",
+  "intensities_W/cm2": [
+    100000000000000.0,
+    1000000000000000.0,
+    1e+16,
+    1e+17,
+    1e+18
+  ],
+  "wavelengths_m": [
+    3.5e-07,
+    5.3e-07,
+    1.06e-06
+  ],
+  "n_simulations": 15,
+  "n_stable_tracking": 0,
+  "n_rti_suppressed": 15,
+  "validation_passed": false,
+  "plot_file": "../analysis/edge_transparency_validation.png",
+  "detailed_results": {
+    "I_1.00e+14_\u03bb_3.50e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 9.385721551743596e-09
+    },
+    "I_1.00e+15_\u03bb_3.50e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.968025758763967e-08
+    },
+    "I_1.00e+16_\u03bb_3.50e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 9.385721551743597e-08
+    },
+    "I_1.00e+17_\u03bb_3.50e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.9680257587639675e-07
+    },
+    "I_1.00e+18_\u03bb_3.50e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 9.385721551743598e-07
+    },
+    "I_1.00e+14_\u03bb_5.30e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.152203415416144e-08
+    },
+    "I_1.00e+15_\u03bb_5.30e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 6.805864780708558e-08
+    },
+    "I_1.00e+16_\u03bb_5.30e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.152203415416144e-07
+    },
+    "I_1.00e+17_\u03bb_5.30e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 6.805864780708559e-07
+    },
+    "I_1.00e+18_\u03bb_5.30e-07": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.152203415416144e-06
+    },
+    "I_1.00e+14_\u03bb_1.06e-06": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 8.608813661664576e-08
+    },
+    "I_1.00e+15_\u03bb_1.06e-06": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.722345912283423e-07
+    },
+    "I_1.00e+16_\u03bb_1.06e-06": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 8.608813661664576e-07
+    },
+    "I_1.00e+17_\u03bb_1.06e-06": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 2.7223459122834234e-06
+    },
+    "I_1.00e+18_\u03bb_1.06e-06": {
+      "stability": "poor",
+      "suppression_factor": Infinity,
+      "recession_velocity_m/s": 8.608813661664576e-06
+    }
+  }
+}

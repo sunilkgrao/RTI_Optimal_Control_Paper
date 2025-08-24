@@ -1,0 +1,54 @@
+{
+  "generated": "2025-08-24T10:10:43.396684",
+  "overall_validation": false,
+  "theorems": [
+    "Universal Collapse",
+    "Bang-Bang Control",
+    "Edge-of-Transparency"
+  ],
+  "statistics": {
+    "growth_rate_validation": {
+      "theorem": "RTI Growth Rate",
+      "n_samples": 50,
+      "mean_relative_error": 0.604199733114677,
+      "error_ci_lower": 0.43367073602403017,
+      "error_ci_upper": 0.7957509170553434,
+      "correlation": 0.04585975309190829,
+      "r_squared": 0.002103116953650792,
+      "slope": 0.05769977351027964,
+      "intercept": 63.0360007298602,
+      "p_value_regression": 0.751818863867621,
+      "ks_statistic": 0.32,
+      "ks_pvalue": 0.011511738725894704,
+      "chi2": 689.7372024857926,
+      "chi2_pvalue": 6.173681200803716e-114,
+      "validated": false,
+      "validation_strength": "Weak"
+    }
+  },
+  "detailed_results": {
+    "universal_collapse": {
+      "validated": true,
+      "n_simulations": 50
+    },
+    "bang_bang": {
+      "validated": true,
+      "single_switch_optimal": 14,
+      "total_tests": 15
+    },
+    "edge_transparency": {
+      "validated": false,
+      "n_stable": 0,
+      "n_suppressed": 15
+    },
+    "growth_rates": {
+      "mean_error": 0.6041997331146771,
+      "within_10_percent": 20.0
+    }
+  },
+  "files_generated": [
+    "validation_report.tex",
+    "validation_summary.json",
+    "statistical_analysis.json"
+  ]
+}

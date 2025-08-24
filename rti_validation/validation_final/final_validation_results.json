@@ -1,0 +1,416 @@
+{
+  "timestamp": "2025-08-24T13:17:14.173021",
+  "universal_collapse": {
+    "tests": {
+      "A0.1_nu1.0e-06": {
+        "atwood": 0.1,
+        "viscosity": 1e-06,
+        "observed_coefficient": 18.209213724433774,
+        "theoretical_coefficient": 1.4904391900824658,
+        "relative_error": 11.217347641956637,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.1_nu2.5e-06": {
+        "atwood": 0.1,
+        "viscosity": 2.5118864315095823e-06,
+        "observed_coefficient": 13.439032417635065,
+        "theoretical_coefficient": 1.4904391900824658,
+        "relative_error": 8.016827058131426,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.1_nu6.3e-06": {
+        "atwood": 0.1,
+        "viscosity": 6.30957344480193e-06,
+        "observed_coefficient": 9.524592161572114,
+        "theoretical_coefficient": 1.4904391900824656,
+        "relative_error": 5.390460090522124,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.1_nu1.6e-05": {
+        "atwood": 0.1,
+        "viscosity": 1.584893192461114e-05,
+        "observed_coefficient": 7.111712282525126,
+        "theoretical_coefficient": 1.4904391900824656,
+        "relative_error": 3.7715548073663014,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.1_nu4.0e-05": {
+        "atwood": 0.1,
+        "viscosity": 3.9810717055349695e-05,
+        "observed_coefficient": 5.190051478057272,
+        "theoretical_coefficient": 1.4904391900824656,
+        "relative_error": 2.4822296089584897,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.1_nu1.0e-04": {
+        "atwood": 0.1,
+        "viscosity": 0.0001,
+        "observed_coefficient": 3.815307998552866,
+        "theoretical_coefficient": 1.4904391900824654,
+        "relative_error": 1.5598548561660985,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu1.0e-06": {
+        "atwood": 0.3,
+        "viscosity": 1e-06,
+        "observed_coefficient": 54.698696718669964,
+        "theoretical_coefficient": 2.149585281465757,
+        "relative_error": 24.44616265765091,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu2.5e-06": {
+        "atwood": 0.3,
+        "viscosity": 2.5118864315095823e-06,
+        "observed_coefficient": 40.06124752745704,
+        "theoretical_coefficient": 2.1495852814657583,
+        "relative_error": 17.636733267981857,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu6.3e-06": {
+        "atwood": 0.3,
+        "viscosity": 6.30957344480193e-06,
+        "observed_coefficient": 28.435408450805248,
+        "theoretical_coefficient": 2.1495852814657574,
+        "relative_error": 12.228323014668083,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu1.6e-05": {
+        "atwood": 0.3,
+        "viscosity": 1.584893192461114e-05,
+        "observed_coefficient": 21.550185099643933,
+        "theoretical_coefficient": 2.1495852814657574,
+        "relative_error": 9.025275705716272,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu4.0e-05": {
+        "atwood": 0.3,
+        "viscosity": 3.9810717055349695e-05,
+        "observed_coefficient": 15.339525662747915,
+        "theoretical_coefficient": 2.1495852814657574,
+        "relative_error": 6.136039586337422,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.3_nu1.0e-04": {
+        "atwood": 0.3,
+        "viscosity": 0.0001,
+        "observed_coefficient": 11.611561235967917,
+        "theoretical_coefficient": 2.1495852814657566,
+        "relative_error": 4.401768115964322,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu1.0e-06": {
+        "atwood": 0.5,
+        "viscosity": 1e-06,
+        "observed_coefficient": 86.65662274286444,
+        "theoretical_coefficient": 2.548615165025314,
+        "relative_error": 33.00145456719188,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu2.5e-06": {
+        "atwood": 0.5,
+        "viscosity": 2.5118864315095823e-06,
+        "observed_coefficient": 65.91088527596408,
+        "theoretical_coefficient": 2.5486151650253133,
+        "relative_error": 24.861450634234707,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu6.3e-06": {
+        "atwood": 0.5,
+        "viscosity": 6.30957344480193e-06,
+        "observed_coefficient": 48.72243821020471,
+        "theoretical_coefficient": 2.5486151650253137,
+        "relative_error": 18.117220551310965,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu1.6e-05": {
+        "atwood": 0.5,
+        "viscosity": 1.584893192461114e-05,
+        "observed_coefficient": 35.397011395034646,
+        "theoretical_coefficient": 2.548615165025314,
+        "relative_error": 12.888723523577974,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu4.0e-05": {
+        "atwood": 0.5,
+        "viscosity": 3.9810717055349695e-05,
+        "observed_coefficient": 25.75211248911358,
+        "theoretical_coefficient": 2.548615165025313,
+        "relative_error": 9.1043550405374,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.5_nu1.0e-04": {
+        "atwood": 0.5,
+        "viscosity": 0.0001,
+        "observed_coefficient": 18.747404372750246,
+        "theoretical_coefficient": 2.5486151650253137,
+        "relative_error": 6.3559180805408255,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu1.0e-06": {
+        "atwood": 0.7,
+        "viscosity": 1e-06,
+        "observed_coefficient": 125.00296723722433,
+        "theoretical_coefficient": 2.8511076027347726,
+        "relative_error": 42.8436511892157,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu2.5e-06": {
+        "atwood": 0.7,
+        "viscosity": 2.5118864315095823e-06,
+        "observed_coefficient": 92.50908312514994,
+        "theoretical_coefficient": 2.851107602734772,
+        "relative_error": 31.446717562120618,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu6.3e-06": {
+        "atwood": 0.7,
+        "viscosity": 6.30957344480193e-06,
+        "observed_coefficient": 67.14542751195822,
+        "theoretical_coefficient": 2.851107602734772,
+        "relative_error": 22.55064657943901,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu1.6e-05": {
+        "atwood": 0.7,
+        "viscosity": 1.584893192461114e-05,
+        "observed_coefficient": 47.796031817888384,
+        "theoretical_coefficient": 2.8511076027347717,
+        "relative_error": 15.764022435366035,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu4.0e-05": {
+        "atwood": 0.7,
+        "viscosity": 3.9810717055349695e-05,
+        "observed_coefficient": 36.773834542828915,
+        "theoretical_coefficient": 2.8511076027347717,
+        "relative_error": 11.898087223209531,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.7_nu1.0e-04": {
+        "atwood": 0.7,
+        "viscosity": 0.0001,
+        "observed_coefficient": 27.232656477737798,
+        "theoretical_coefficient": 2.8511076027347717,
+        "relative_error": 8.55160599747843,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu1.0e-06": {
+        "atwood": 0.9,
+        "viscosity": 1e-06,
+        "observed_coefficient": 161.24260458857754,
+        "theoretical_coefficient": 3.100238448533118,
+        "relative_error": 51.00974288441255,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu2.5e-06": {
+        "atwood": 0.9,
+        "viscosity": 2.5118864315095823e-06,
+        "observed_coefficient": 117.91934285819345,
+        "theoretical_coefficient": 3.1002384485331187,
+        "relative_error": 37.03557204252696,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu6.3e-06": {
+        "atwood": 0.9,
+        "viscosity": 6.30957344480193e-06,
+        "observed_coefficient": 87.85342000699896,
+        "theoretical_coefficient": 3.1002384485331174,
+        "relative_error": 27.337633206428666,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu1.6e-05": {
+        "atwood": 0.9,
+        "viscosity": 1.584893192461114e-05,
+        "observed_coefficient": 64.7565211107008,
+        "theoretical_coefficient": 3.1002384485331187,
+        "relative_error": 19.88759370794218,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu4.0e-05": {
+        "atwood": 0.9,
+        "viscosity": 3.9810717055349695e-05,
+        "observed_coefficient": 45.93287581904451,
+        "theoretical_coefficient": 3.100238448533118,
+        "relative_error": 13.815917092047457,
+        "valid_fit": "True",
+        "agreement": "False"
+      },
+      "A0.9_nu1.0e-04": {
+        "atwood": 0.9,
+        "viscosity": 0.0001,
+        "observed_coefficient": 34.16172928261382,
+        "theoretical_coefficient": 3.1002384485331183,
+        "relative_error": 10.019065097646758,
+        "valid_fit": "True",
+        "agreement": "False"
+      }
+    },
+    "summary": {
+      "total_tests": 30,
+      "valid_tests": 30,
+      "agreement_tests": 0,
+      "mean_relative_error": 16.76006512755492,
+      "success_rate": 0.0,
+      "passed": false
+    }
+  },
+  "bang_bang_control": {
+    "tests": {
+      "A0.1_T0.1": {
+        "atwood": 0.1,
+        "time_horizon": 0.1,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.010000000000000002,
+        "final_amplitude": 0.002102852685053864,
+        "improvement_vs_multi": 2.7553689234598644
+      },
+      "A0.1_T0.5": {
+        "atwood": 0.1,
+        "time_horizon": 0.5,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.05,
+        "final_amplitude": 207.187285070526,
+        "improvement_vs_multi": 1.3962397152754529
+      },
+      "A0.1_T1.0": {
+        "atwood": 0.1,
+        "time_horizon": 1.0,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.1,
+        "final_amplitude": 71105927.65492639,
+        "improvement_vs_multi": 1.1060891200385548
+      },
+      "A0.3_T0.1": {
+        "atwood": 0.3,
+        "time_horizon": 0.1,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.010000000000000002,
+        "final_amplitude": 0.03139185274802574,
+        "improvement_vs_multi": 1.3022050163436236
+      },
+      "A0.3_T0.5": {
+        "atwood": 0.3,
+        "time_horizon": 0.5,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.05,
+        "final_amplitude": 1537443.5894056587,
+        "improvement_vs_multi": 1.0791113102244962
+      },
+      "A0.3_T1.0": {
+        "atwood": 0.3,
+        "time_horizon": 1.0,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.1,
+        "final_amplitude": 3603053623696025.0,
+        "improvement_vs_multi": 1.0098270417898039
+      },
+      "A0.5_T0.1": {
+        "atwood": 0.5,
+        "time_horizon": 0.1,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.010000000000000002,
+        "final_amplitude": 0.12292730769426832,
+        "improvement_vs_multi": 1.1700625387409682
+      },
+      "A0.5_T0.5": {
+        "atwood": 0.5,
+        "time_horizon": 0.5,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.05,
+        "final_amplitude": 727266533.0083302,
+        "improvement_vs_multi": 1.0299442939160481
+      },
+      "A0.5_T1.0": {
+        "atwood": 0.5,
+        "time_horizon": 1.0,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.1,
+        "final_amplitude": 8.478206032292817e+20,
+        "improvement_vs_multi": 1.0022046147515062
+      },
+      "A0.7_T0.1": {
+        "atwood": 0.7,
+        "time_horizon": 0.1,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.010000000000000002,
+        "final_amplitude": 0.3533196198885983,
+        "improvement_vs_multi": 1.118031141443796
+      },
+      "A0.7_T0.5": {
+        "atwood": 0.7,
+        "time_horizon": 0.5,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.05,
+        "final_amplitude": 111166507773.49142,
+        "improvement_vs_multi": 1.0142068241493705
+      },
+      "A0.7_T1.0": {
+        "atwood": 0.7,
+        "time_horizon": 1.0,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.1,
+        "final_amplitude": 2.062287178123088e+25,
+        "improvement_vs_multi": 1.0007412933042252
+      },
+      "A0.9_T0.1": {
+        "atwood": 0.9,
+        "time_horizon": 0.1,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.010000000000000002,
+        "final_amplitude": 0.8660405285246459,
+        "improvement_vs_multi": 1.089877726149909
+      },
+      "A0.9_T0.5": {
+        "atwood": 0.9,
+        "time_horizon": 0.5,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.05,
+        "final_amplitude": 8710226167440.192,
+        "improvement_vs_multi": 1.007554428412132
+      },
+      "A0.9_T1.0": {
+        "atwood": 0.9,
+        "time_horizon": 1.0,
+        "single_optimal": "True",
+        "optimal_switch_time": 0.1,
+        "final_amplitude": 1.3037541692957283e+29,
+        "improvement_vs_multi": 1.0004916920506126
+      }
+    },
+    "summary": {
+      "total_tests": 15,
+      "single_optimal_count": 15,
+      "success_rate": 1.0,
+      "passed": true
+    }
+  },
+  "overall_status": "PARTIAL"
+}

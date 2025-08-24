@@ -1,0 +1,233 @@
+{
+  "executive_summary": {
+    "timestamp": "2025-08-24T14:06:18.811562",
+    "validation_quality": "NEEDS IMPROVEMENT",
+    "confidence_level": "LOW",
+    "data_source": "REAL Athena++ RTI Simulations",
+    "repository": "connor-mcclellan/rayleigh-taylor",
+    "total_simulations": 9,
+    "mean_error": 1.0063023690521982,
+    "median_error": 1.0096208764688943,
+    "mean_r_squared": -0.1277732843057018,
+    "processing_time_seconds": 1.129950761795044
+  },
+  "detailed_results": {
+    "dr_1.0": {
+      "density_ratio": 1.0,
+      "atwood_number": 0.0,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.021631175091097608,
+        "theoretical": 0.0,
+        "relative_error": Infinity,
+        "r_squared": -0.31669204094615133
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.03270083118239704,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9650000333786011
+      }
+    },
+    "dr_1.5": {
+      "density_ratio": 1.5,
+      "atwood_number": 0.2,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": 0.014947742173658218,
+        "theoretical": 1.5893091672082713,
+        "relative_error": 0.9905948178730292,
+        "r_squared": -0.9120113344863532
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.13100549460267574,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9700000286102295
+      }
+    },
+    "dr_2.0": {
+      "density_ratio": 2.0,
+      "atwood_number": 0.3333333333333333,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": 0.002172496457888328,
+        "theoretical": 2.051789312190804,
+        "relative_error": 0.9989411698145709,
+        "r_squared": -0.2534293707871571
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.032962147696856674,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9900000095367432
+      }
+    },
+    "dr_2.5": {
+      "density_ratio": 2.5,
+      "atwood_number": 0.42857142857142855,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.026774587210976933,
+        "theoretical": 2.3265103983244866,
+        "relative_error": 1.0115084751954082,
+        "r_squared": 0.31997895630502804
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.07039293605765988,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9950000047683716
+      }
+    },
+    "dr_3.0": {
+      "density_ratio": 3.0,
+      "atwood_number": 0.5,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.01976450916132556,
+        "theoretical": 2.5129184372817637,
+        "relative_error": 1.0078651614266896,
+        "r_squared": 0.02402576479202012
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.19272880294749503,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9950000047683716
+      }
+    },
+    "dr_3.5": {
+      "density_ratio": 3.5,
+      "atwood_number": 0.5555555555555556,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.030134868633622625,
+        "theoretical": 2.6488486120137855,
+        "relative_error": 1.011376591511099,
+        "r_squared": -0.10492447724682519
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.12954881135216292,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9850000143051147
+      }
+    },
+    "dr_4.0": {
+      "density_ratio": 4.0,
+      "atwood_number": 0.6,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.03600050824999617,
+        "theoretical": 2.752764226539706,
+        "relative_error": 1.0130779483048027,
+        "r_squared": 0.009103054459065674
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.14186257300238292,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9950000047683716
+      }
+    },
+    "dr_4.5": {
+      "density_ratio": 4.5,
+      "atwood_number": 0.6363636363636364,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.03226176927494591,
+        "theoretical": 2.8349543368781847,
+        "relative_error": 1.0113799960920966,
+        "r_squared": -0.06914497944115316
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.06696888644134041,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9950000047683716
+      }
+    },
+    "dr_5.0": {
+      "density_ratio": 5.0,
+      "atwood_number": 0.6666666666666666,
+      "num_timesteps": 51,
+      "time_range": [
+        0.0,
+        20.0
+      ],
+      "growth_rate": {
+        "measured": -0.016466364479064858,
+        "theoretical": 2.9016682724324,
+        "relative_error": 1.005674792199889,
+        "r_squared": -0.035783888040239686
+      },
+      "amplitude": {
+        "initial": 0.0,
+        "final": 0.11911815022544363,
+        "growth_factor": Infinity
+      },
+      "mixing_width": {
+        "initial": 0.0,
+        "final": 0.9950000047683716
+      }
+    }
+  },
+  "paper_readiness": {
+    "growth_rates_validated": 

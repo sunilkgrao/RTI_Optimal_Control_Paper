@@ -1,0 +1,138 @@
+[
+  {
+    "paper_id": "Zhou2017",
+    "title": "Rayleigh-Taylor and Richtmyer-Meshkov instability induced flow, turbulence, and mixing",
+    "authors": "Zhou, Y.",
+    "journal": "Physics Reports",
+    "year": 2017,
+    "volume": 720,
+    "pages": "1-136",
+    "doi": "10.1016/j.physrep.2017.07.005",
+    "access": "open",
+    "data_types": [
+      "growth_rates",
+      "mixing_width",
+      "bubble_spike_velocities"
+    ],
+    "atwood_range": [
+      0.1,
+      0.9
+    ],
+    "experimental_methods": [
+      "water_channel",
+      "gas_channel",
+      "numerical"
+    ],
+    "key_figures": [
+      "Fig_15_growth_rates",
+      "Fig_22_mixing_width",
+      "Fig_28_bubble_spike"
+    ]
+  },
+  {
+    "paper_id": "Dimonte2004",
+    "title": "A comparative study of the turbulent Rayleigh-Taylor instability using high-resolution three-dimensional numerical simulations",
+    "authors": "Dimonte, G., et al.",
+    "journal": "Physics of Fluids",
+    "year": 2004,
+    "volume": 16,
+    "pages": "1668-1693",
+    "doi": "10.1063/1.1688328",
+    "access": "subscription",
+    "data_types": [
+      "growth_rates",
+      "mixing_width",
+      "spectral_analysis"
+    ],
+    "atwood_range": [
+      0.5,
+      0.9
+    ],
+    "experimental_methods": [
+      "numerical_3d"
+    ],
+    "key_figures": [
+      "Fig_5_growth_comparison",
+      "Fig_8_mixing_width_evolution"
+    ]
+  },
+  {
+    "paper_id": "Ramaprabhu2012",
+    "title": "On the initialization of Rayleigh-Taylor simulations",
+    "authors": "Ramaprabhu, P., Dimonte, G., Andrews, M.J.",
+    "journal": "Physics of Fluids",
+    "year": 2012,
+    "volume": 24,
+    "pages": "062107",
+    "doi": "10.1063/1.4725190",
+    "access": "subscription",
+    "data_types": [
+      "growth_rates",
+      "initialization_effects"
+    ],
+    "atwood_range": [
+      0.1,
+      0.9
+    ],
+    "experimental_methods": [
+      "numerical_2d",
+      "numerical_3d"
+    ],
+    "key_figures": [
+      "Fig_3_growth_rates",
+      "Fig_7_atwood_comparison"
+    ]
+  },
+  {
+    "paper_id": "Banerjee2010",
+    "title": "Density dependence of Rayleigh-Taylor mixing for sustained and impulsive acceleration histories",
+    "authors": "Banerjee, A., Kraft, W.N., Andrews, M.J.",
+    "journal": "Physics of Fluids",
+    "year": 2010,
+    "volume": 22,
+    "pages": "122101",
+    "doi": "10.1063/1.3517312",
+    "access": "subscription",
+    "data_types": [
+      "growth_rates",
+      "mixing_efficiency"
+    ],
+    "atwood_range": [
+      0.2,
+      0.8
+    ],
+    "experimental_methods": [
+      "gas_channel"
+    ],
+    "key_figures": [
+      "Fig_4_growth_rates",
+      "Fig_9_mixing_efficiency"
+    ]
+  },
+  {
+    "paper_id": "Cabot2006",
+    "title": "Reynolds number effects on Rayleigh-Taylor instability with possible implications for type Ia supernovae",
+    "authors": "Cabot, W.H., Cook, A.W.",
+    "journal": "Nature Physics",
+    "year": 2006,
+    "volume": 2,
+    "pages": "562-568",
+    "doi": "10.1038/nphys361",
+    "access": "subscription",
+    "data_types": [
+      "growth_rates",
+      "reynolds_effects"
+    ],
+    "atwood_range": [
+      0.1,
+      0.9
+    ],
+    "experimental_methods": [
+      "numerical_3d"
+    ],
+    "key_figures": [
+      "Fig_2_growth_rates",
+      "Fig_4_reynolds_scaling"
+    ]
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "rti_validation_data_inventory": {
+    "created": "2024-08-24",
+    "description": "Comprehensive inventory of RTI validation data sources, simulation codes, and analysis tools",
+    "version": "1.0",
+    
+    "simulation_codes": {
+      "RT1D": {
+        "source": "https://github.com/duffell/RT1D.git",
+        "type": "1D Rayleigh-Taylor simulation",
+        "language": "C",
+        "status": "available",
+        "description": "1D RT instability code with gravity and MHD",
+        "location": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/simulations/RT1D",
+        "key_features": ["hydrodynamics", "gravity", "MHD", "1D_cartesian"],
+        "documentation": "README.md available"
+      },
+      "Athena": {
+        "source": "https://github.com/PrincetonUniversity/athena-public-version.git",
+        "type": "MHD simulation code",
+        "language": "C++",
+        "status": "available",
+        "description": "Public version of Athena MHD code with RT capabilities",
+        "location": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/simulations/athena-public-version",
+        "key_features": ["2D/3D", "MHD", "hydrodynamics", "AMR", "RT_instability"],
+        "documentation": "Full documentation in doc/ directory"
+      }
+    },
+    
+    "experimental_data": {
+      "synthetic_zhou2017": {
+        "description": "Synthetic experimental data based on Zhou 2017 typical values",
+        "source": "Generated from Zhou 2017 empirical relations",
+        "datasets": {
+          "growth_rate_data.csv": {
+            "description": "Growth rate vs Atwood number following γ = √(A*g*k)",
+            "rows": 36,
+            "columns": ["atwood_number", "wave_number", "growth_rate_theory", "growth_rate_experimental", "uncertainty", "source"],
+            "atwood_range": [0.1, 0.9],
+            "wave_numbers": [1.0, 2.0, 5.0, 10.0],
+            "scatter": "5-10%",
+            "uncertainty": "3-5%"
+          },
+          "mixing_width_data.csv": {
+            "description": "Mixing width evolution h = 2*γ*t²",
+            "rows": 100,
+            "columns": ["time", "atwood_number", "mixing_width_theory", "mixing_width_experimental", "uncertainty", "source"],
+            "time_range": [0.1, 2.0],
+            "scatter": "5-15%",
+            "uncertainty": "4-8%"
+          },
+          "bubble_spike_data.csv": {
+            "description": "Bubble and spike velocities from Zhou 2017 relations",
+            "rows": 9,
+            "columns": ["atwood_number", "bubble_velocity_theory", "bubble_velocity_experimental", "spike_velocity_theory", "spike_velocity_experimental", "bubble_uncertainty", "spike_uncertainty", "source"],
+            "scatter": "±8%",
+            "uncertainty": "5%"
+          }
+        }
+      }
+    },
+    
+    "literature_data": {
+      "digitized_datasets": {
+        "zhou_growth_rates.csv": {
+          "source": "Zhou 2017 Fig. 15",
+          "description": "Digitized growth rate vs Atwood number data",
+          "rows": 9,
+          "atwood_range": [0.1, 0.9],
+          "reference": "Zhou, Y. (2017). Physics Reports, 720, 1-136"
+        },
+        "dimonte_mixing.csv": {
+          "source": "Dimonte 2004 Fig. 8",
+          "description": "Mixing width evolution for different Atwood numbers",
+          "rows": 8,
+          "atwood_values": [0.5, 0.9],
+          "reference": "Dimonte, G. et al. (2004). Physics of Fluids, 16, 1668-1693"
+        }
+      },
+      
+      "literature_database": {
+        "total_papers": 5,
+        "open_access": 1,
+        "subscription_only": 4,
+        "year_range": [2004, 2017],
+        "key_papers": [
+          {
+            "id": "Zhou2017",
+            "title": "Rayleigh-Taylor and Richtmyer-Meshkov instability induced flow, turbulence, and mixing",
+            "access": "open",
+            "data_types": ["growth_rates", "mixing_width", "bubble_spike_velocities"]
+          },
+          {
+            "id": "Dimonte2004",
+            "title": "A comparative study of the turbulent Rayleigh-Taylor instability using high-resolution three-dimensional numerical simulations",
+            "access": "subscription",
+            "data_types": ["growth_rates", "mixing_width", "spectral_analysis"]
+          },
+          {
+            "id": "Ramaprabhu2012",
+            "title": "On the initialization of Rayleigh-Taylor simulations",
+            "access": "subscription",
+            "data_types": ["growth_rates", "initialization_effects"]
+          },
+          {
+            "id": "Banerjee2010",
+            "title": "Density dependence of Rayleigh-Taylor mixing for sustained and impulsive acceleration histories",
+            "access": "subscription",
+            "data_types": ["growth_rates", "mixing_efficiency"]
+          },
+          {
+            "id": "Cabot2006",
+            "title": "Reynolds number effects on Rayleigh-Taylor instability with possible implications for type Ia supernovae",
+            "access": "subscription",
+            "data_types": ["growth_rates", "reynolds_effects"]
+          }
+        ]
+      }
+    },
+    
+    "data_summary": {
+      "total_datasets": 5,
+      "synthetic_datasets": 3,
+      "literature_datasets": 2,
+      "simulation_codes": 2,
+      "coverage": {
+        "atwood_numbers": [0.1, 0.9],
+        "wave_numbers": [1.0, 10.0],
+        "time_evolution": [0.1, 2.0],
+        "data_types": ["growth_rates", "mixing_width", "bubble_spike_velocities", "spectral_analysis", "initialization_effects"]
+      }
+    },
+    
+    "validation_capabilities": {
+      "growth_rate_validation": {
+        "theory": "γ = √(A*g*k)",
+        "data_sources": ["synthetic_zhou2017", "zhou_growth_rates"],
+        "parameter_range": "A: 0.1-0.9, k: 1-10 m⁻¹"
+      },
+      "mixing_width_validation": {
+        "theory": "h = 2*γ*t²",
+        "data_sources": ["synthetic_zhou2017", "dimonte_mixing"],
+        "parameter_range": "A: 0.1-0.9, t: 0.1-2.0 s"
+      },
+      "velocity_validation": {
+        "theory": "Zhou 2017 empirical relations",
+        "data_sources": ["synthetic_zhou2017"],
+        "parameters": "bubble and spike velocities"
+      }
+    },
+    
+    "recommended_validation_workflow": [
+      "1. Run RT1D simulations for 1D validation",
+      "2. Use Athena for 2D/3D validation studies",
+      "3. Compare against synthetic Zhou 2017 data",
+      "4. Validate against digitized literature data",
+      "5. Generate comprehensive validation reports"
+    ],
+    
+    "file_locations": {
+      "base_directory": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation",
+      "data_directory": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/data",
+      "simulation_directory": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/simulations",
+      "analysis_directory": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/analysis",
+      "reports_directory": "/Users/sunilrao/Downloads/RTI_Optimal_Control_Paper/rti_validation/reports"
+    },
+    
+    "next_steps": [
+      "Compile and test RT1D simulation code",
+      "Configure Athena for RTI test cases",
+      "Run validation simulations against synthetic data",
+      "Implement automated comparison tools",
+      "Generate validation reports"
+    ]
+  }
+}

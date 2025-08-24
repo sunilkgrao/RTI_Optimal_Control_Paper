@@ -1,0 +1,53 @@
+{
+  "table_ii_parameters": {
+    "C_QM": 0.16872023103287861,
+    "C_IF": 0.1,
+    "alpha": 0.7076132684193286,
+    "tau_B": 1.121247728417537,
+    "chi2_reduced": 2.6196132771319443,
+    "r_squared": 0.955419086304571,
+    "confidence": 0.7695407830340116,
+    "C_QM_err": 0.01449799239629714,
+    "C_IF_err": 4.587038825714464,
+    "alpha_err": 0.11218879283655382,
+    "tau_B_err": 0.7071075369808499
+  },
+  "calibration_input_data": {
+    "pareto_slope_kappa": -0.4873,
+    "kappa_uncertainty": 0.3447,
+    "effective_viscosity_lp": 1.2e-06,
+    "effective_viscosity_cp": 1.4e-06,
+    "experimental_anchor_points": 3,
+    "atwood_number": 0.5
+  },
+  "lp_cp_efficacy_results": {
+    "r_a": 1.2764,
+    "r_gamma": 0.8653,
+    "kappa": -0.4873,
+    "a_max_lp": 12.3,
+    "a_max_cp": 15.7,
+    "gamma_lp": 2450000000.0,
+    "gamma_cp": 2120000000.0,
+    "confidence": 0.917,
+    "r_a_err": 0.122,
+    "r_gamma_err": 0.0745,
+    "kappa_err": 0.3447
+  },
+  "closure_relations": {
+    "equation_20": "C_QM * (\u03bd_eff/\u03bd_classical)^\u03b1 = f(\u03ba, A)",
+    "equation_21": "C_IF * ln(\u03bd_cp/\u03bd_lp) = ln(r_\u03b3) + \u03b1*ln(C_QM)",
+    "equation_22": "\u03c4_B = C_QM^(1/3) * I^(-2/3) * f(\u03b1)"
+  },
+  "methodology": {
+    "optimization_method": "Differential Evolution",
+    "parameter_bounds": "C_QM: [0.1,5.0], C_IF: [0.1,5.0], \u03b1: [0.01,2.0], \u03c4_B: [0.1,50.0]",
+    "uncertainty_estimation": "Finite difference Hessian approximation",
+    "experimental_weighting": "Chi-squared with measurement uncertainties"
+  },
+  "validation_metadata": {
+    "analysis_date": "2025-08-24T12:00:00Z",
+    "calibrator": "Table_II_Calibrator",
+    "purpose": "RTI_Optimal_Control_Parameter_Fitting",
+    "paper_table": "Table_II"
+  }
+}
