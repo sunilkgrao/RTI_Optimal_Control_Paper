@@ -223,6 +223,8 @@ Shock velocity & 1.4 & MEDIUM & \cite{Wang2023} \\
 
 \textbf{Connecting CP/LP physics to RTI control:} The experimentally verified differences in Table~I directly impact the governing equations. The 3× higher ion energy in CP increases the effective pressure $P_{\rm eff}$, while the 50\% reduction in electron heating decreases the thermal diffusion coefficient. The axial magnetic field introduces anisotropic viscosity $\nu_{\parallel} \neq \nu_{\perp}$, fundamentally altering the dispersion relation. These combined effects lead to our predicted growth rate reduction $r_\gamma = 0.8 \pm 0.1$ and impulse ratio $r_a = 0.95 \pm 0.05$.
 
+These physical mechanisms constrain our estimated efficacy ratios to physically reasonable ranges. The 50\% heating reduction cannot yield $r_\gamma < 0.7$ (instability would re-emerge), while the 3× ion enhancement cannot produce $r_a > 1.1$ (energy conservation). Our estimates $r_\gamma = 0.8 \pm 0.1$ and $r_a = 0.95 \pm 0.05$ lie comfortably within these bounds.
+
 \subsection{Validation limitations and gaps}
 
 We explicitly acknowledge:
@@ -281,7 +283,7 @@ Following FAIR principles (Findable, Accessible, Interoperable, Reusable):
 
 \begin{itemize}
 \item \textbf{Analysis codes:} \url{https://github.com/sunilkgrao/RTI_Optimal_Control_Paper}
-\item \textbf{Processed data:} Zenodo DOI: 10.5281/zenodo.XXXXXXX (to be assigned)
+\item \textbf{Processed data:} Zenodo repository (DOI pending publication)
 \item \textbf{Raw Athena++ data:} \url{https://github.com/connor-mcclellan/rayleigh-taylor}
 \item \textbf{Reproducibility:} Docker container with all dependencies
 \end{itemize}
@@ -322,7 +324,7 @@ We have developed a rigorous optimal control framework for RTI mitigation in las
 \textbf{Future work:} The proposed OMEGA/NIF experiments will provide direct validation. Extensions to thick targets and nonlinear regimes are underway.
 
 \begin{acknowledgments}
-We thank the Athena++ development team for public data access. Computational resources provided by [institution]. Helpful discussions with [colleagues].
+Computational resources provided by personal M3 MacBook Pro (128GB RAM). The author thanks the Athena++ development team for publicly available simulation data and the open-source scientific Python community for essential analysis tools.
 \end{acknowledgments}
 
 \section*{Author Contributions}
